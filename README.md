@@ -13,6 +13,9 @@ O diagrama apresenta tópicos como:
 
 Este arquivo pode ser visualizado diretamente no GitHub caso Mermaid.js esteja ativado. Caso contrário, recomenda-se usar um **editor online como [Mermaid Live Editor](https://mermaid-js.github.io/mermaid-live-editor)** para visualizar o diagrama.  
 
+## 📌 Acesse o Mapa Mental  
+Clique [aqui](https://github.com/Augusto2212/Mapa-Mental-GitHub/blob/main/Mapa-Mental.mmd) para visualizar o mapa mental sobre Git e GitHub diretamente no GitHub.
+
 ## 🚀 Como Utilizar  
 - Clone este repositório com `git clone <URL>`  
 - Edite o mapa mental para adicionar novos tópicos.  
