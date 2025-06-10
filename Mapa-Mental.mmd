@@ -1,41 +1,51 @@
-graph TD;
-    A[Git e GitHub] --> B[Git Básico]:::topic;
-    B --> C[Instalação]:::desc;
-    C --> C1[Passo a passo para instalar Git no seu sistema];
-    B --> D[Configuração]:::desc;
-    D --> D1[Definição de nome e email para commits];
-    B --> E[Comandos Essenciais]:::desc;
-    E --> F[git init]:::cmd;
-    F --> F1[Inicia um novo repositório Git];
-    E --> G[git add]:::cmd;
-    G --> G1[Adiciona arquivos para o próximo commit];
-    E --> H[git commit]:::cmd;
-    H --> H1[Salva alterações com uma mensagem];
-    E --> I[git push]:::cmd;
-    I --> I1[Envia commits para o repositório remoto];
-
-    A --> J[Branching]:::topic;
-    J --> K[Criar Branch]:::cmd;
-    K --> K1[Cria uma nova ramificação para desenvolvimento paralelo];
-    J --> L[Trocar Branch]:::cmd;
-    L --> L1[Alterna entre branches do projeto];
-    J --> M[Mesclar Branch]:::cmd;
-    M --> M1[Une mudanças de uma branch para outra];
-
-    A --> N[GitHub]:::topic;
-    N --> O[Criar Repositório]:::desc;
-    O --> O1[Passo a passo para criar um repo no GitHub];
-    N --> P[Clonar Projeto]:::cmd;
-    P --> P1[Baixa um repositório remoto para o seu computador];
-    N --> Q[Pull Request]:::desc;
-    Q --> Q1[Solicita a fusão de uma branch no repositório];
-
-    A --> R[Fluxo de Trabalho]:::topic;
-    R --> S[Criar Branch]:::step;
-    S --> S1[Iniciar uma nova feature ou correção];
-    R --> T[Fazer Commit]:::step;
-    T --> T1[Registrar alterações no histórico do Git];
-    R --> U[Sincronizar com Remoto]:::step;
-    U --> U1[Enviar código atualizado para o servidor];
-    R --> V[Abrir Pull Request]:::step;
-    V --> V1[Solicitar a revisão e fusão das alterações];
+---
+config:
+  themeVariables:
+    width: 800
+    height: 600
+  layout: dagre
+---
+flowchart TD
+    A["Git e GitHub"] --> B["Git Básico"] & B & J["Branching"] & N["GitHub"] & R["Fluxo de Trabalho"]
+    B --> C["Instalação"] & D["Configuração"] & E["Comandos Essenciais"]
+    C --> C1["Passo a passo para instalar Git no seu sistema"]
+    D --> D1["Definição de nome e email para commits"]
+    E --> F["git init"] & G["git add"] & H["git commit"] & I["git push"]
+    F --> F1["Inicia um novo repositório Git"]
+    G --> G1["Adiciona arquivos para o próximo commit"]
+    H --> H1["Salva alterações com uma mensagem"]
+    I --> I1["Envia commits para o repositório remoto"]
+    J --> K["Criar Branch"] & L["Trocar Branch"] & M["Mesclar Branch"]
+    K --> K1["Cria uma nova ramificação para desenvolvimento paralelo"]
+    L --> L1["Alterna entre branches do projeto"]
+    M --> M1["Une mudanças de uma branch para outra"]
+    N --> O["Criar Repositório"] & P["Clonar Projeto"] & Q["Pull Request"]
+    O --> O1["Passo a passo para criar um repo no GitHub"]
+    P --> P1["Baixa um repositório remoto para o seu computador"]
+    Q --> Q1["Solicita a fusão de uma branch no repositório"]
+    R --> S["Criar Branch"] & T["Fazer Commit"] & U["Sincronizar com Remoto"] & V["Abrir Pull Request"]
+    S --> S1["Iniciar uma nova feature ou correção"]
+    T --> T1["Registrar alterações no histórico do Git"]
+    U --> U1["Enviar código atualizado para o servidor"]
+    V --> V1["Solicitar a revisão e fusão das alterações"]
+     B:::topic
+     J:::topic
+     N:::topic
+     R:::topic
+     C:::desc
+     D:::desc
+     E:::desc
+     F:::cmd
+     G:::cmd
+     H:::cmd
+     I:::cmd
+     K:::cmd
+     L:::cmd
+     M:::cmd
+     O:::desc
+     P:::cmd
+     Q:::desc
+     S:::step
+     T:::step
+     U:::step
+     V:::step
